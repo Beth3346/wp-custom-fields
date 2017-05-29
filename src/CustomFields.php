@@ -37,6 +37,7 @@ class CustomFields
 
         foreach ($fields as $field) {
             $id = $field['id'];
+
             if (isset($_POST[$id])) {
                 update_post_meta($post_id, $id, $_POST[$id]);
             }
